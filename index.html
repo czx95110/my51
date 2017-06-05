@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>index</title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/icons-extra.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		
+	</head>
+
+	<body>
+
+		<nav class="mui-bar mui-bar-tab">
+			<a id="defaultTab" class="mui-tab-item mui-active" href="html/subpage-home.html">
+				<span class="mui-icon ">
+					<img src="img/nav-a.png"/>
+				</span>
+				<span class="mui-tab-label">A-home</span>
+
+			</a>
+			<a id="tab2" class="mui-tab-item" href="html/subpage-find2.html">
+				<span class="mui-icon  ">
+						<img src="img/nav-a.png"/>
+				</span>
+				<span class="mui-tab-label">B-find</span>
+			</a>
+			<a id="tab3" class="mui-tab-item" href="html/subpage-msg.html">
+				<span class="mui-icon  ">
+					<img src="img/nav-a.png"/>
+				</span>
+				<span class="mui-tab-label">C-msg</span>
+			</a>
+			<a id="tab4" class="mui-tab-item" href="html/subpage-mine.html">
+				<span class="mui-icon">
+						<img src="img/nav-a.png"/>
+				</span>
+				<span class="mui-tab-label">D-mine</span>
+			</a>
+		</nav>
+
+		<script type="text/javascript">
+			mui.init();
+			var subpages = [
+				'html/subpage-home.html',
+				'html/subpage-find2.html',
+				'html/subpage-msg.html',
+				'html/subpage-mine.html'
+			];
+			var pageStyle = {
+				top: '0px',
+				bottom: '51px'
+			}
+			var aniShow = {};
+			
+			mui.plusReady(function() {
+				var self = plus.webview.currentWebview();
+				for (var i = 0; i<subpages.length; i++) {
+					var temp={};
+					var sub=plus.webview.create(subpages[i],subpages[i],pageStyle);
+					if (i>0) {
+						sub.hide();
+					} else{
+						temp[subpages[i]] = 'true';
+						mui.extend(aniShow,temp);
+					}
+					self.append(sub);
+				}
+			});
+			var activeTab = subpages[0];
+			
+			mui('.mui-bar-tab').on('tap','a',function (e) {
+				var targetTab = this.getAttribute('href');
+				if(targetTab==activeTab){
+					return;
+				}
+				if (mui.os.ios || aniShow[targetTab]) {
+					plus.webview.show(targetTab);
+				} else{
+					var temp = {};
+					temp[targetTab] = 'true';
+					mui.extend(aniShow,temp);
+					plus.webview.show(targetTab,'fade-ind',300);
+				}
+				plus.webview.hide(activeTab);
+				activeTab = targetTab;
+			});
+			
+			 
+			
+		</script>
+
+	</body>
+
+</html>

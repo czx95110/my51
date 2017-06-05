@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.user-header {
+				padding: 10px 0;
+				background: orange;
+			}
+			
+			.user-avater {
+				line-height: 80px;
+				overflow: hidden;
+				color: #fff;
+			}
+			
+			.user-avater img {
+				float: left;
+				width: 60px;
+				height: 60px;
+				margin: 10px 0 0 20px;
+			}
+			
+			.user-avater .user-name {
+				float: left;
+				margin-left: 15px;
+			}
+			
+			.user-avater .user-score {
+				float: right;
+				margin: 20px 0 0 0;
+				line-height: 40px;
+				padding: 0 10px;
+				background: #fff;
+				color: orange;
+				border-top-left-radius: 20px;
+				border-bottom-left-radius: 20px;
+			}
+			
+			.user-score span {
+				margin-left: 8px;
+				font-size: 15px;
+			}
+			
+			.user-list {
+				width: 96%;
+				margin: 20px auto 0;
+				border-top: 1px solid #fff;
+				text-align: center;
+			}
+			
+			.user-list a {
+				display: block;
+				padding: 10px 0 0;
+				margin: 0;
+				color: #fff;
+			}
+			
+			.user-list p {
+				color: #fff;
+			}
+			
+			.user-list .mui-icon {
+				font-size: 2em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="user-header">
+				<div class="user-avater">
+					<img src="../img/user-photo.png" />
+					<span class="user-name">d95*d*d*d</span>
+					<div class="user-score">
+						<i class="mui-icon mui-icon-spinner"></i>
+						<span>积分：999</span>
+					</div>
+				</div>
+
+				<div class="user-list mui-row">
+					<div class="mui-col-xs-3">
+						<a href="">
+							<i class="mui-icon mui-icon-gear"></i>
+							<p>成功</p>
+						</a>
+					</div>
+					<div class="mui-col-xs-3">
+						<a href="">
+							<i class="mui-icon mui-icon-gear"></i>
+							<p>待付</p>
+						</a>
+					</div>
+					<div class="mui-col-xs-3">
+						<a href="">
+							<i class="mui-icon mui-icon-gear"></i>
+							<p>失败</p>
+						</a>
+					</div>
+					<div class="mui-col-xs-3">
+						<a href="">
+							<i class="mui-icon mui-icon-gear"></i>
+							<p>作废</p>
+						</a>
+					</div>
+				</div>
+
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="" class="">
+						<i class="mui-icon mui-icon-flag"></i> 刘备
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="" class="">
+						<i class="mui-icon mui-icon-home"></i> 关羽
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="" class="">
+						<i class="mui-icon mui-icon-map"></i> 张飞
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="" class="">
+						<i class="mui-icon mui-icon-flag"></i> 赵云
+					</a>
+				</li>
+
+			</ul>
+
+			<ul class="mui-table-view" style="margin-top: 10px;color: cornflowerblue;">
+				<li class="mui-table-view-cell">
+					<a href=""><i class="mui-icon mui-icon-locked"></i> 手势密码</a>
+					<div class="mui-switch mui-active mui-switch-blue">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href=""><i class="mui-icon mui-icon-locked"></i> 支付密码</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href=""><i class="mui-icon mui-icon-locked"></i> 登录密码</a>
+					<div class="mui-switch mui-switch-mini   mui-active">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="mui-table-view" style="margin-top: 10px;color: green;">
+				<li class="mui-table-view-cell">
+					<a href=""><i class="mui-icon mui-icon-help"></i> 帮助中心</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href=""><i class="mui-icon mui-icon-chatboxes"></i> 意见反馈</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href=""><i class="mui-icon mui-icon-gear"></i> 设置</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href=""><i class="mui-icon mui-icon-checkbox"></i> 司马懿</a>
+				</li>
+
+			</ul>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

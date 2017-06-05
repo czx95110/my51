@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-slider-item img {
+				width: 100%;
+			}
+			
+			#start {
+				position: absolute;
+				bottom: 40px;
+				width: 50%;
+				left: 25%;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="mui-content">
+			<div class="mui-slider mui-fullscreen">
+				<div class="mui-slider-group">
+					<div class="mui-slider-item">
+						<a href="javascript:void(0);">
+							<img src="img/guide_01.jpg" />
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="javascript:void(0);">
+							<img src="img/guide_02.jpg" />
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="javascript:void(0);">
+							<img src="img/guide_03.jpg" />
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="javascript:void(0);">
+							<img src="img/guide_04.jpg" />
+							<button type="button" id="start">start</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				preloadPages: [{
+					url: 'index.html',
+					id: 'index',
+					style: {},
+					subpages: [{}, {}]
+				}],
+				preloadLimit:3
+			});
+			mui.plusReady(function() {
+				var sh = plus.navigator.getStatusbarHeight();
+				var h = plus.screen.resolutionHeight;
+				var w = plus.screen.resolutionWidth;
+				var imgs = document.querySelectorAll('.mui-slider-item img');
+				for(var i = 0, len = imgs.length; i < len; i++) {
+					imgs[i].style.height = (h - sh) + 'px';
+					imgs[i].style.width = w + 'px';
+				}
+							 
+				plus.navigator.closeSplashscreen();
+				document.getElementById("start").addEventListener('tap', function() {
+					plus.storage.setItem('launchFlag', 'true');
+					mui.openWindow({
+						url: 'index.html',
+						id: 'index',
+						extras: {
+							mark: 'guide'
+						}
+					});
+				});
+			});
+			mui.back = function() {};
+		</script>
+	</body>
+
+</html>

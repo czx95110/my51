@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>确认下单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-bar.mui-bar-nav {
+				background: orange;
+			}
+			
+			.mui-bar.mui-bar-nav a {
+				color: #fff;
+			}
+			
+			.mui-title {
+				color: #fff;
+				text-align: left;
+			}
+			/* list item */
+			
+			.one-title {
+				font-size: 18px;
+				padding: 10px 15px;
+				line-height: 25px;
+				border-bottom: 1px solid #ddd;
+			}
+			
+			.one-list {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			
+			.one-list li {
+				position: relative;
+				padding: 11px 0;
+				overflow: hidden;
+			}
+			
+			.one-list .item-left {
+				color: #999;
+			}
+			
+			.item-left+span {
+				color: #333;
+			}
+			/* service item */
+			
+			.sec-one ~[class^='sec'] {
+				margin-top: 10px;
+			}
+			
+			.sub-title {
+				line-height: 24px;
+				margin: 0;
+				padding: 10px 0;
+				font-size: 16px;
+			}
+			
+			.sub-item {
+				padding: 0 0 8px 0;
+			}
+			/* seller infomation */
+			
+			.sec-one,
+			.sec-two,
+			.sec-three {
+				background: #fff;
+				padding: 0 15px;
+			}
+			
+			.mui-bar-tab .mui-btn {
+				width: 34%;
+				top: 0;
+				height: 50px;
+				border-radius: 0;
+				font-size: 18px;
+				background: orange;
+				border-color: orange;
+			}
+			
+			.mui-bar-tab .order-money {
+				display: inline-block;
+				line-height: 50px;
+				width: 66%;
+				padding-left: 20px;
+				background: #555;
+				color: #fff;
+				font-size: 18px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">游戏币</h1>
+			<a href="" class="mui-icon mui-icon-refresh mui-pull-right"></a>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<span class="order-money">价格：￥260.00元</span>
+			<button type="button" class="mui-btn mui-btn-blue">确认下单</button>
+		</nav>
+		<div class="mui-content">
+			<div class="sec-one">
+				<h3 class="one-title">
+		    	8600万金币 = 260.00元 【 极速发货，全球最快的】
+		    </h3>
+				<ul class=" one-list">
+					<li class="">
+						<span class="item-left">单价</span>
+						<span class="mui-pull-right">￥260.00</span>
+					</li>
+					<li class="">
+						<span class="item-left">游戏名</span>
+						<span class="mui-pull-right">王者荣耀</span>
+					</li>
+					<li class="">
+						<span class="item-left">游戏区</span>
+						<span class="mui-pull-right">电信区</span>
+					</li>
+					<li class="">
+						<span class="item-left">游戏服</span>
+						<span class="mui-pull-right">电信一区</span>
+					</li>
+
+				</ul>
+
+			</div>
+			<div class="sec-two">
+				<p class="sub-title">
+					<span>保障服务</span>
+					<i class="mui-icon mui-icon-help mui-pull-right"></i>
+				</p>
+				<div class="sub-item">
+					<i class="mui-icon mui-icon-star"></i>
+					<span>保障交易</span>
+				</div>
+				<div class="sub-item">
+					<i class="mui-icon mui-icon-star-filled"></i>
+					<span>保障交易</span>
+				</div>
+			</div>
+			<div class="sec-three">
+				<p class="sub-title">
+					<span>卖家信息</span>
+				</p>
+				<div class="sub-item">
+					<span>成交笔数</span>
+					<span class="mui-pull-right">123 笔</span>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

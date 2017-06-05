@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>page-home</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav my-head-bg">
+			<span class="mui-icon mui-icon-extra mui-icon-extra-sweep mui-pull-right my-icon-mod" onclick="clicked('barcode_scan.html',true,true)"></span>
+			<div class="mui-input-row mui-search">
+				<input type="search" class="mui-input-clear my-input-bg" placeholder="搜索商品名称/关键字">
+			</div>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../img/carousel-3.jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/carousel-1.jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/carousel-2.jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/carousel-3.jpg">
+						</a>
+					</div>
+
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../img/carousel-1.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<!--<div class="mui-indicator"></div>-->
+				</div>
+			</div>
+			<ul class="mui-table-view mui-grid-view mui-grid-9">
+				<li class="mui-table-view-cell mui-media my-table-mod mui-col-xs-3 mui-col-sm-3">
+					<a href="#">
+						<img src="../img/list-bone.png" />
+						<div class="mui-media-body">AA</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media my-table-mod mui-col-xs-3 mui-col-sm-3">
+					<a href="#">
+						<img src="../img/list-circle.png" />
+						<div class="mui-media-body">BB</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media my-table-mod mui-col-xs-3 mui-col-sm-3">
+					<a href="#">
+						<img src="../img/list-fish.png" />
+						<div class="mui-media-body">CC</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media my-table-mod mui-col-xs-3 mui-col-sm-3">
+					<a href="#">
+						<img src="../img/list-fish2.png" />
+						<div class="mui-media-body">DD</div>
+					</a>
+				</li>
+			</ul>
+
+			<div class="container-sub">
+				<h5 class="my-title-homepage">
+					<span class="title-left">精彩推荐</span>
+					<span class="title-right">换一批 <span class="mui-icon mui-icon-loop my-icon-refresh"></span></span>
+				</h5>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../img/mbws.png">
+							<div class="mui-media-body">
+								幸福
+								<p class='mui-ellipsis my-elli-width'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+							</div>
+						</a>
+						<button class="my-btn-a ">关注</button>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../img/mbws.png">
+							<div class="mui-media-body">
+								木屋
+								<p class='mui-ellipsis my-elli-width'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+							</div>
+						</a>
+						<button class="my-btn-a ">关注</button>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../img/mbws.png">
+							<div class="mui-media-body">
+								CBD
+								<p class='mui-ellipsis my-elli-width'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+							</div>
+						</a>
+						<button class="my-btn-a ">关注</button>
+					</li>
+				</ul>
+			</div>
+			<div class="container-sub">
+				<h5 class="my-title-homepage border-btm">
+					<span class="title-left">热卖商品</span>
+				</h5>
+				<div class="mui-row">
+
+					<div class="mui-col-sm-4 mui-col-xs-4 my-col-height">
+						<dl class="">
+							<dt>
+							<h4 class="game-title color-orange">地下城勇士</h4>
+							<p class="game-info">热卖挑战书</p>
+						</dt>
+							<dd>
+								<img src="../img/hot-goods1.jpg" />
+							</dd>
+						</dl>
+					</div>
+					<div class="mui-col-sm-4 mui-col-xs-4 my-col-height">
+						<dl class="">
+							<dt>
+							<h4 class="game-title color-orange">BBBB</h4>
+							<p class="game-info">热卖挑战书</p>
+						</dt>
+							<dd>
+								<img src="../img/hot-goods2.jpg" />
+							</dd>
+						</dl>
+					</div>
+
+					<div class="mui-col-sm-4 mui-col-xs-4 my-col-height">
+						<div class="mui-row">
+							<div class="mui-col-sm-12 mui-col-xs-12 sub-col-height">
+								<dl class="">
+									<dt class="lf-up-corner">
+									<h4 class="game-title2 color-green">BBBB</h4>
+									<p class="game-info">热卖挑战书</p>
+									</dt>
+									<dd class="rt-down-corner">
+										<img src="../img/jiuweihu.png" />
+									</dd>
+								</dl>
+							</div>
+							<div class="mui-col-sm-12 mui-col-xs-12 sub-col-height">
+								<dl class="">
+									<dt class="lf-up-corner">
+									<h4 class="game-title2 color-blue">CCC</h4>
+									<p class="game-info">热卖挑战书</p>
+									</dt>
+									<dd class="rt-down-corner">
+										<img src="../img/manwang.png" />
+									</dd>
+								</dl>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="guess-line">
+				<b></b>
+				<span class="guess-text">猜你喜欢</span>
+				<b></b>
+			</div>
+			<div class="container-sub">
+				<div id="tabItems" class="11mui-slider">
+					<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+						<a class="mui-control-item mui-active" href="#item1cont">
+							<span class="mui-icon mui-icon-star"></span>游戏币
+						</a>
+						<a class="mui-control-item" href="#item2cont">
+							<span class="mui-icon mui-icon-person"></span>账号
+						</a>
+						<a class="mui-control-item" href="#item3cont">
+							<span class="mui-icon mui-icon-extra mui-icon-extra-grech"></span>装备
+						</a>
+					</div>
+					<div class="mui-slider-group " id="tabContainers">
+						<div id="item1cont" class="mui-slider-item mui-control-content mui-active">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<p class="gm-gold-title">6000万金币=200.00元 【安全可靠，买的放心，绿色商品】</p>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 <span class="mui-pull-right">1元=30.00万金币</span></div>
+										<span class="gm-gold-money">￥200.00元</span>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="gm-gold-title">6000万金币=200.00元 【安全可靠，买的放心，绿色商品】</p>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 <span class="mui-pull-right">1元=30.00万金币</span></div>
+										<span class="gm-gold-money">￥200.00元</span>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="gm-gold-title">6000万金币=200.00元 【安全可靠，买的放心，绿色商品】</p>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 <span class="mui-pull-right">1元=30.00万金币</span></div>
+										<span class="gm-gold-money">￥200.00元</span>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="gm-gold-title">6000万金币=200.00元 【安全可靠，买的放心，绿色商品】</p>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 <span class="mui-pull-right">1元=30.00万金币</span></div>
+										<span class="gm-gold-money">￥200.00元</span>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="gm-gold-title">6000万金币=200.00元 【安全可靠，买的放心，绿色商品】</p>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 <span class="mui-pull-right">1元=30.00万金币</span></div>
+										<span class="gm-gold-money">￥200.00元</span>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="gm-gold-title">6000万金币=200.00元 【安全可靠，买的放心，绿色商品】</p>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 <span class="mui-pull-right">1元=30.00万金币</span></div>
+										<span class="gm-gold-money">￥200.00元</span>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="gm-gold-title">6000万金币=200.00元 【安全可靠，买的放心，绿色商品】</p>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 <span class="mui-pull-right">1元=30.00万金币</span></div>
+										<span class="gm-gold-money">￥200.00元</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div id="item2cont" class="mui-slider-item mui-control-content">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">【缔造者 男 80级 身份证 未设置 QQ等级1-5级 无QQ好友 】 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥1200.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">【缔造者 男 80级 身份证 未设置 QQ等级1-5级 无QQ好友 】 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥1200.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">【缔造者 男 80级 身份证 未设置 QQ等级1-5级 无QQ好友 】 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥1200.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">【缔造者 男 80级 身份证 未设置 QQ等级1-5级 无QQ好友 】 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥1200.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">【缔造者 男 80级 身份证 未设置 QQ等级1-5级 无QQ好友 】 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥1200.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">【缔造者 男 80级 身份证 未设置 QQ等级1-5级 无QQ好友 】 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥1200.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">【缔造者 男 80级 身份证 未设置 QQ等级1-5级 无QQ好友 】 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥1200.00元 <b>截图认证</b></span>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+						<div id="item3cont" class="mui-slider-item mui-control-content">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">+15加持的秘制墓道 鬼剑士 强化≥15 90粉太刀 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥220.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">+15加持的秘制墓道 鬼剑士 强化≥15 90粉太刀 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥120.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">+15加持的秘制墓道 鬼剑士 强化≥15 90粉太刀 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥120.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">+15加持的秘制墓道 鬼剑士 强化≥15 90粉太刀 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥120.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">+15加持的秘制墓道 鬼剑士 强化≥15 90粉太刀 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥120.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">+15加持的秘制墓道 鬼剑士 强化≥15 90粉太刀 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥120.00元 <b>截图认证</b></span>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="gm-account-title">+15加持的秘制墓道 鬼剑士 强化≥15 90粉太刀 1Q5的等等1个85.95.2个</div>
+										<p class="gm-com-info">地下城与勇士</p>
+										<div class="gm-com-info">江西区/江西1区 </div>
+										<span class="gm-gold-money">￥120.00元 <b>截图认证</b></span>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/subpage.js"></script>
+		<script type="text/javascript">
+		
+		</script>
+	</body>
+
+</html>

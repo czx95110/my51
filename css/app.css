@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* 修改默认样式 */
+body {
+  background: #F2F2F2;
+  font-size: 15px; }
+
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.container-sub {
+  position: relative;
+  margin: 5px auto;
+  background: #fff; }
+
+.mui-bar-nav.mui-bar .mui-icon.my-icon-mod {
+  margin-left: 0;
+  color: #fff; }
+
+.mui-bar.mui-bar-nav.my-head-bg {
+  background: #ff5a00; }
+
+.mui-search .my-input-bg {
+  background: #fff;
+  color: #333; }
+
+.mui-grid-view.mui-grid-9 {
+  background: #fff;
+  border-left: 0; }
+
+.mui-grid-view.mui-grid-9 .mui-table-view-cell.my-table-mod {
+  border: 0;
+  background: #fff;
+  padding: 4px 15px; }
+
+.my-title-homepage {
+  height: 30px;
+  line-height: 28px;
+  padding-left: 10px;
+  margin-bottom: 0;
+  background-color: #fff;
+  color: #222; }
+  .my-title-homepage .title-left {
+    padding-left: 8px;
+    border-left: 3px solid #ff5a00; }
+  .my-title-homepage .title-right {
+    float: right;
+    margin-right: 5px; }
+  .my-title-homepage .mui-icon.my-icon-refresh {
+    font-size: 20px; }
+
+.border-btm {
+  border-bottom: 1px solid #eee; }
+
+.my-btn-a {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  padding: 0 8px;
+  color: #ff5a00;
+  border: 1px solid #ff5a00;
+  border-radius: 3px;
+  font-size: 13px;
+  height: 28px;
+  line-height: 28px;
+  transform: translateY(-50%); }
+
+.mui-ellipsis.my-elli-width {
+  width: 80%;
+  font-size: 12px; }
+
+.mui-row {
+  overflow: hidden; }
+  .mui-row .my-col-height {
+    height: 240px; }
+  .mui-row .sub-col-height {
+    height: 120px; }
+  .mui-row dl {
+    height: 100%; }
+  .mui-row dt {
+    padding-left: 8px;
+    height: 20%; }
+  .mui-row dd {
+    height: 80%; }
+  .mui-row .game-title {
+    margin: 5px 0 0;
+    font-weight: bold; }
+  .mui-row .game-title2 {
+    margin: 5px 0 0;
+    font-weight: bold;
+    font-size: 12px; }
+  .mui-row .game-info {
+    margin: 0;
+    font-size: 12px; }
+  .mui-row .rt-down-corner {
+    position: absolute;
+    right: 5px;
+    bottom: -8px;
+    width: 75%;
+    height: 75%; }
+  .mui-row .lf-up-corner {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 1; }
+  .mui-row img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle; }
+
+.guess-line {
+  text-align: center; }
+  .guess-line b {
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    width: 33%;
+    border-bottom: 1px solid #ddd; }
+  .guess-line .guess-text {
+    display: inline-block;
+    margin: 0 5px;
+    color: #888; }
+
+.mui-control-content {
+  background-color: white;
+  min-height: 215px; }
+
+.mui-control-content .mui-loading {
+  margin-top: 50px; }
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+  color: #ff5a00;
+  border-bottom-color: #ff5a00; }
+
+.mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-progress-bar {
+  background: #ff5a00; }
+
+.mui-scroll {
+  top: 1px; }
+
+.mui-slider-indicator .mui-icon {
+  line-height: 1;
+  width: auto;
+  height: auto;
+  border: 0; }
+
+.mui-table-view-cell .gm-gold-title {
+  width: 76%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #444444; }
+.mui-table-view-cell .gm-gold-money {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  color: #ff5a00; }
+  .mui-table-view-cell .gm-gold-money b {
+    display: block;
+    text-align: center;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: 1px solid #1c43fc;
+    color: #1c43fc;
+    border-radius: 3px;
+    transform: scale(0.9); }
+.mui-table-view-cell .gm-account-title {
+  width: 75%;
+  height: 44px;
+  overflow: hidden;
+  color: #444444; }
+.mui-table-view-cell .gm-com-info {
+  font-size: 12px;
+  color: #888888; }
+
+.color-orange {
+  color: orange; }
+
+.color-green {
+  color: green; }
+
+.color-blue {
+  color: blue; }
