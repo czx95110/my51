@@ -11,7 +11,9 @@
 				min-height: 80px;
 				background: orange;
 			}
-			
+			.mui-content{
+				background: #fff;
+			}
 			.mui-scroll-wrapper {
 				top: 36px;
 				background: #fff;
@@ -22,7 +24,9 @@
 				font-size: 18px;
 				color: #fff;
 			}
-			
+			.find-title a{
+				color: #fff;
+			}
 			.find-tab-item {
 				display: inline-block;
 				padding: 0 5px;
@@ -78,8 +82,12 @@
 				position: relative;
 			}
 			
+			.mui-slider{
+				top: 36px;
+			}
 			.list-container {
 				position: relative;
+				margin-top: 36px;
 			}
 			
 			.list-container h4 {
@@ -154,9 +162,54 @@
 
 			</div>
 		</header>
-		<div class="mui-content mui-scroll-wrapper">
+		<div class="mui-content ">
+				<!--<div class="mui-scroll">-->
+		<!--轮播图-->
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../img/carousel-3.jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/carousel-1.jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/carousel-2.jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/carousel-3.jpg">
+						</a>
+					</div>
+
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../img/carousel-1.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<!--<div class="mui-indicator"></div>-->
+				</div>
+			</div>
 			<!--列表开始-->
-			<div class="list-container">
+				
+			
+			<div class="list-container ">
 				<a href="#" class="list-item-a mui-row">
 					<div class="mui-col-xs-4">
 						<img src="../img/find-01.jpg" alt="" />
@@ -186,12 +239,10 @@
 		<h4>玩穿越火线坑了队友坑了队友坑了队友</h4>
 		<p>穿越火线穿越火线穿越火线穿越火线穿越火线穿越火线穿越火线</p>
 	</div>
-</a> 
-				<a href="#" class="list-item-b">
+</a> <a href="#" class="list-item-b">
 	<h4>玩游戏，坑队友 玩游戏，坑队友 玩游戏，坑队友 玩游 玩游戏，坑队友 </h4>
 	<img src="../img/carousel-2.jpg" />
-</a>
-				<a href="#" class="list-item-a mui-row">
+</a> <a href="#" class="list-item-a mui-row">
 	<div class="mui-col-xs-4">
 		<img src="../img/find-04.jpg" alt="" />
 	</div>
@@ -207,9 +258,11 @@
 		<h4>玩穿越火线坑了队友坑了队友坑了队友</h4>
 		<p>穿越火线穿越火线穿越火线穿越火线穿越火线穿越火线穿越火线</p>
 	</div>
-</a> 
+</a>
 
 			</div>
+			
+				<!--</div>-->
 			<!--列表结束-->
 		</div>
 		<!--右上角弹出菜单-->
@@ -251,6 +304,11 @@
 				bounce: true //是否启用回弹
 			});
 			var devWidth = screen.width;
+			//轮播图
+			var slider = mui("#slider");
+			slider.slider({
+				interval: 2000
+			});
 		</script>
 	</body>
 
