@@ -265,7 +265,9 @@
 					"html/tab-top-subpage-1.html",
 					"js/webviewGroup.js",
 					"fonts/mui.ttf",
-					"html/tab-top-subpage-2.html"
+					"html/tab-top-subpage-2.html",
+					"img/find-04.jpg",
+					"img/find-01.jpg"
 				],
 				"refer": [
 					"index.html",
@@ -348,7 +350,8 @@
 					"js/mui.min.js",
 					"css/mui.min.css",
 					"img/carousel-2.jpg",
-					"fonts/mui.ttf"
+					"fonts/mui.ttf",
+					"img/user-photo.png"
 				],
 				"refer": [],
 				"priority": 0
@@ -364,8 +367,7 @@
 				"img/sinaweibo.png",
 				"img/star-full.png",
 				"js/mui.js",
-				"img/qihoo.png",
-				"img/user-photo.png"
+				"img/qihoo.png"
 			]
 		}
 	},

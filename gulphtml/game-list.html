@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+	</head>
+	<style type="text/css">
+		.mui-bar-nav {
+			background: #FE6700;
+			box-shadow: 0 0 0;
+		}
+		
+		.mui-bar-nav a {
+			color: #fff;
+		}
+		
+		.mui-title {
+			text-align: left;
+			color: #fff;
+		}
+		
+		.game-head {
+			line-height: 36px;
+			background: #FE6700;
+			color: #fff;
+			text-align: center;
+		}
+		
+		.my-icon-arrow-down {
+			padding: 0 14px;
+			background: url(../img/arrow-down2.png)no-repeat center;
+		}
+		
+		.my-icon-arrow-up {
+			padding: 0 14px;
+			background: url(../img/arrow-up2.png)no-repeat center;
+		}
+	</style>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">穿越火线</h1>
+
+		</header>
+
+		<div class="mui-content">
+			<div class="game-head mui-row">
+				<div class="mui-col-xs-4">
+					区服 <i class="my-icon-arrow-down"></i>
+				</div>
+				<div class="mui-col-xs-4">
+					排序 <i class="my-icon-arrow-down"></i>
+				</div>
+				<div class="mui-col-xs-4">
+					筛选 <i class="my-icon-arrow-down"></i>
+				</div>
+			</div>
+
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="gm-account-title">【缔造者 男 80级 身份证 未设置 QQ等级1-5级 无QQ好友 】 1Q5的等等1个85.95.2个</div>
+					<p class="gm-com-info">地下城与勇士</p>
+					<div class="gm-com-info">江西区/江西1区 </div>
+					<span class="gm-gold-money">￥1200.00元 </span>
+				</li>
+				@@include('./comhtml/game-list.html') @@include('./comhtml/game-list.html') 
+				@@include('./comhtml/game-list.html') @@include('./comhtml/game-list.html') 
+				@@include('./comhtml/game-list.html') @@include('./comhtml/game-list.html') 
+				@@include('./comhtml/game-list.html') @@include('./comhtml/game-list.html') 
+			</ul>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

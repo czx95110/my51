@@ -1,0 +1,20 @@
+var games=[
+	{
+		gameId:10000,
+		gameName:'英雄联盟',
+		gameSection:'电信一',
+		gameServer:'德玛西亚',
+	},
+	{
+		gameId:10001,
+		gameName:'游戏2',
+		gameSection:'电信3',
+		gameServer:'服务3'
+	},
+	{
+		gameId:10002,
+		gameName:'youxi3',
+		gameSection:'网通3',
+		gameServer:'服务4'
+	}
+];
