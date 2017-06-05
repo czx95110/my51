@@ -6,165 +6,30 @@
 		<title>发现</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/subpage-find.css"/>
 		<style type="text/css">
-			.mui-bar {
-				min-height: 80px;
-				background: orange;
-			}
-			.mui-content{
-				background: #fff;
-			}
-			.mui-scroll-wrapper {
-				top: 36px;
-				background: #fff;
-			}
 			
-			.find-title {
-				line-height: 44px;
-				font-size: 18px;
-				color: #fff;
-			}
-			.find-title a{
-				color: #fff;
-			}
-			.find-tab-item {
-				display: inline-block;
-				padding: 0 5px;
-				color: #fff;
-				text-align: center;
-				border-bottom: 2px solid transparent;
-			}
-			
-			.find-tab-item.me-show {
-				display: block;
-			}
-			
-			.find-tab-item.me-active {
-				border-bottom: 2px solid #fff;
-			}
-			/*system*/
-			
-			.mui-plus .plus {
-				display: inline;
-			}
-			
-			.plus {
-				display: none;
-			}
-			
-			#topPopover {
-				position: fixed;
-				top: 16px;
-				right: 6px;
-			}
-			
-			#topPopover .mui-popover-arrow {
-				left: auto;
-				right: 6px;
-			}
-			
-			p {
-				/*text-indent: 22px;*/
-			}
-			
-			span.mui-icon {
-				font-size: 14px;
-				color: #007aff;
-				margin-left: -15px;
-				padding-right: 10px;
-			}
-			
-			.mui-popover {
-				height: 300px;
-			}
-			
-			.mui-scroll {
-				position: relative;
-			}
-			
-			.mui-slider{
-				top: 36px;
-			}
-			.list-container {
-				position: relative;
-				margin-top: 36px;
-			}
-			
-			.list-container h4 {
-				font-size: 16px;
-			}
-			
-			.list-item-a {
-				display: block;
-				padding: 10px;
-				position: relative;
-				border-bottom: 2px solid #ccc;
-			}
-			
-			.list-item-a img {
-				width: 100%;
-				height: 82px;
-				vertical-align: middle;
-				border-radius: 5px;
-			}
-			
-			.my-style {
-				padding-left: 10px;
-			}
-			
-			.my-style h4 {
-				margin-bottom: 10px;
-				line-height: 24px;
-				color: #444;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-			}
-			
-			.my-style p {
-				margin: 0;
-				height: 44px;
-				line-height: 22px;
-				color: #777;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: pre-wrap;
-			}
-			
-			.list-item-b {
-				display: block;
-				padding: 5px 10px;
-				text-align: center;
-				border-bottom: 2px solid #CCC;
-			}
-			
-			.list-item-b h4 {
-				color: #444;
-				line-height: 20px;
-			}
-			
-			.list-item-b img {
-				max-width: 90%;
-				max-height: 100px;
-			}
 		</style>
 	</head>
 
 	<body>
 		<header class="mui-bar mui-bar-nav">
-			<h1 class="find-title">游戏资讯 <a href="#topPopover" id="menu" class="mui-icon mui-icon-plus mui-pull-right"></a></h1>
-			<div id="tabChange" class="">
+			<h1 class="find-title">游戏资讯 
+				<a href="#topPopover" id="menu" 
+					class="mui-icon mui-icon-plus mui-pull-right"></a>
+			</h1>
+
+		</header>
+		<div class="mui-content ">
+			<!--选项卡标签-->
+				<div id="tabChange" class="find-tabs">
 				<a href="#" class="find-tab-item me-active">推荐</a>
 				<a href="#" class="find-tab-item">手游</a>
 				<a href="#" class="find-tab-item">新游</a>
 				<a href="#" class="find-tab-item">攻略</a>
 				<a href="#" class="find-tab-item">爆笑</a>
-
-			</div>
-		</header>
-		<div class="mui-content ">
-				<!--<div class="mui-scroll">-->
-		<!--轮播图-->
+			</div>		
+			<!--轮播图开始-->
 			<div id="slider" class="mui-slider">
 				<div class="mui-slider-group mui-slider-loop">
 					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
@@ -206,9 +71,10 @@
 					<!--<div class="mui-indicator"></div>-->
 				</div>
 			</div>
-			<!--列表开始-->
+			<!--轮播图结束-->
 				
-			
+			<!--列表开始-->
+							
 			<div class="list-container ">
 				<a href="#" class="list-item-a mui-row">
 					<div class="mui-col-xs-4">
@@ -227,7 +93,6 @@
 
 			</div>
 			
-				<!--</div>-->
 			<!--列表结束-->
 		</div>
 		<!--右上角弹出菜单-->
