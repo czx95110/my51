@@ -282,7 +282,8 @@
 					"html/tab-top-subpage-4.html",
 					"html/barcode_scan.html",
 					"openhtml/open-a.html",
-					"openhtml/open-b.html"
+					"openhtml/open-b.html",
+					"html-open/open-a.html"
 				],
 				"priority": 0
 			},
@@ -374,7 +375,11 @@
 					"css/user-center.css",
 					"html-usercenter/order-succ.html",
 					"html/subpage-home.html",
-					"index.html"
+					"index.html",
+					"img/state-succ.png",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0

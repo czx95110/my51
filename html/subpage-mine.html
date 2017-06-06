@@ -175,8 +175,14 @@
 			mui('#orderItem').on('tap','a',function () {
 				mui.openWindow({
 					url:this.href,
-					id:this.href
-				})
+					id:this.href,
+					extras:{
+						age:36
+					}
+				});
+		 		//发送参数至order-dfk.html页面
+		 		var dpage=plus.webview.getWebviewById(this.href);
+		 		mui.fire(dpage,'npg',{age:44});
 			})
 		</script>
 	</body>
