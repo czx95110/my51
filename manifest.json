@@ -267,14 +267,20 @@
 					"fonts/mui.ttf",
 					"html/tab-top-subpage-2.html",
 					"img/find-04.jpg",
-					"img/find-01.jpg"
+					"img/find-01.jpg",
+					"css/subpage-find.css",
+					"img/carousel-3.jpg",
+					"img/carousel-2.jpg",
+					"img/carousel-1.jpg"
 				],
 				"refer": [
 					"index.html",
 					"html/tab-top-subpage-3.html",
 					"html/tab-top-subpage-5.html",
 					"html/tab-top-subpage-4.html",
-					"html/barcode_scan.html"
+					"html/barcode_scan.html",
+					"openhtml/open-a.html",
+					"openhtml/open-b.html"
 				],
 				"priority": 0
 			},

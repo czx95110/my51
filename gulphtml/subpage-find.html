@@ -6,9 +6,9 @@
 		<title>发现</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../css/mui.min.css" rel="stylesheet" />
-		<link rel="stylesheet" type="text/css" href="../css/subpage-find.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/subpage-find.css" />
 		<style type="text/css">
-			
+
 		</style>
 	</head>
 
@@ -21,14 +21,16 @@
 
 		</header>
 		<div class="mui-content ">
-			<!--选项卡标签-->
-				<div id="tabChange" class="find-tabs">
-				<a href="#" class="find-tab-item me-active">推荐</a>
-				<a href="#" class="find-tab-item">手游</a>
-				<a href="#" class="find-tab-item">新游</a>
-				<a href="#" class="find-tab-item">攻略</a>
-				<a href="#" class="find-tab-item">爆笑</a>
-			</div>		
+			<!--选项卡标签开始--> 
+			<div id="tabChange" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<a href="#item1" class=" me-active mui-control-item mui-active">推荐</a>
+				<a href="#item2" class=" mui-control-item">手游</a>
+				<a href="#item3" class=" mui-control-item">新游</a>
+				<a href="#item4" class=" mui-control-item">攻略</a>
+				<a href="#item5" class=" mui-control-item">爆笑</a>
+			</div>
+			<!--选项卡标签结束-->
+				
 			<!--轮播图开始-->
 			<div id="slider" class="mui-slider">
 				<div class="mui-slider-group mui-slider-loop">
@@ -72,30 +74,31 @@
 				</div>
 			</div>
 			<!--轮播图结束-->
-				
-			<!--列表开始-->
-							
-			<div class="list-container ">
-				<a href="#" class="list-item-a mui-row">
-					<div class="mui-col-xs-4">
-						<img src="../img/find-01.jpg" alt="" />
-					</div>
-					<div class="mui-col-xs-8 my-style">
-						<h4>玩穿越火线坑了队友坑了队友坑了队友</h4>
-						<p>穿越火线穿越火线穿越火线穿越火线穿越火线穿越火线穿越火线</p>
-					</div>
-				</a>
-				<a href="#" class="list-item-b">
-					<h4>玩游戏，坑队友 玩游戏，坑队友 玩游戏，坑队友 玩游 玩游戏，坑队友 </h4>
-					<img src="../img/carousel-2.jpg" />
-				</a>
-				@@include('comhtml/list-item-a.html') @@include('comhtml/list-item-a.html') @@include('comhtml/list-item-b.html') @@include('comhtml/list-item-a.html') @@include('comhtml/list-item-a.html')
 
+			<!--列表开始-->
+			<div id="tabContainers" class="list-container mui-slider-group">
+				<div id="item1" class="mui-slider-item mui-control-content 
+					mui-active">
+					@@include('comhtml/list-item-a.html') @@include('comhtml/list-item-a.html') @@include('comhtml/list-item-b.html') @@include('comhtml/list-item-a.html') @@include('comhtml/list-item-a.html')
+				</div>
+				<div id="item2" class="mui-slider-item mui-control-content">
+					@@include('comhtml/list-item-a.html') @@include('comhtml/list-item-a.html') @@include('comhtml/list-item-a.html') @@include('comhtml/list-item-a.html')
+				</div>
+				<div id="item3" class="mui-slider-item mui-control-content">
+					@@include('comhtml/list-item-a.html') @@include('comhtml/list-item-a.html') @@include('comhtml/list-item-b.html')
+
+				</div>
+				<div id="item4" class="mui-slider-item mui-control-content">
+					@@include('comhtml/list-item-b.html') @@include('comhtml/list-item-b.html') @@include('comhtml/list-item-b.html') @@include('comhtml/list-item-a.html')
+				</div>
+				<div id="item5" class="mui-slider-item mui-control-content">
+					@@include('comhtml/list-item-a.html') @@include('comhtml/list-item-a.html') @@include('comhtml/list-item-a.html') @@include('comhtml/list-item-a.html')
+				</div>
+		
 			</div>
-			
 			<!--列表结束-->
 		</div>
-		<!--右上角弹出菜单-->
+		<!--右上角弹出菜单开始-->
 		<div id="topPopover" class="mui-popover">
 			<div class="mui-popover-arrow"></div>
 			<div class="mui-scroll-wrapper">
@@ -121,6 +124,8 @@
 			</div>
 
 		</div>
+		<!--右上角弹出菜单结束-->
+		
 		<script src="../js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init();
@@ -139,6 +144,15 @@
 			slider.slider({
 				interval: 2000
 			});
+		
+			//打开页面 
+			mui('#tabContainers').on('tap','a',function  (e) {
+				mui.openWindow({
+					url:this.href,
+					id:this.href,
+					extras:{}
+				})
+			})
 		</script>
 	</body>
 
