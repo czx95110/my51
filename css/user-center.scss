@@ -1,0 +1,77 @@
+.mui-bar-nav {
+    background: orange;
+    box-shadow: 0 0 0 0;
+    a {
+        color: #fff;
+    }
+    .mui-title {
+        background: orange;
+        text-align: left;
+        color: #fff;
+    }
+}
+
+.u-center-header {
+    position: fixed;
+    width: 100%;
+    line-height: 38px;
+    text-align: center;
+    background: orange;
+    .tab-item {
+        float: left;
+        display: inline-block;
+        color: #fff;
+        width: 25%;
+        border-bottom: 2px solid transparent;
+        &.active {
+            border-bottom-color: #fff;
+        }
+    }
+}
+
+.u-center-body {
+    position: relative;
+    top: 40px;
+    .no-order {
+        text-align: center;
+        padding: 60px 0 30px;
+        img {
+            width: 80px;
+            height: 40px;
+        }
+        div {
+            line-height: 40px;
+            color: #999;
+        }
+    }
+    .mui-icon-star-filled {
+        color: orange;
+    }
+    .cell-head {
+        color: #999;
+    }
+    .cell-time {
+        float: right;
+        margin-top: 2px;
+    }
+    .cell-body {
+        padding: 5px 0;
+        border-bottom: 1px solid orange;
+    }
+    .cell-foot{
+        padding: 8px 0 0 0;
+    }
+    p {
+        line-height: 25px;
+        font-size: 16px;
+        color: #555;
+    }
+    .state-img{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+}

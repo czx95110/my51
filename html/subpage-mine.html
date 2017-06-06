@@ -82,27 +82,27 @@
 					</div>
 				</div>
 
-				<div class="user-list mui-row">
+				<div id="orderItem" class="user-list mui-row">
 					<div class="mui-col-xs-3">
-						<a href="">
-							<i class="mui-icon mui-icon-gear"></i>
-							<p>成功</p>
-						</a>
-					</div>
-					<div class="mui-col-xs-3">
-						<a href="">
+						<a href="../html-usercenter/order-dfk.html">
 							<i class="mui-icon mui-icon-gear"></i>
 							<p>待付</p>
 						</a>
 					</div>
 					<div class="mui-col-xs-3">
-						<a href="">
+						<a href="../html-usercenter/order-yfk.html">
 							<i class="mui-icon mui-icon-gear"></i>
-							<p>失败</p>
+							<p>已付</p>
 						</a>
 					</div>
 					<div class="mui-col-xs-3">
-						<a href="">
+						<a href="../html-usercenter/order-succ.html">
+							<i class="mui-icon mui-icon-gear"></i>
+							<p>成功</p>
+						</a>
+					</div>
+					<div class="mui-col-xs-3">
+						<a href="../html-usercenter/order-cancel.html">
 							<i class="mui-icon mui-icon-gear"></i>
 							<p>作废</p>
 						</a>
@@ -171,7 +171,13 @@
 		</div>
 		<script src="../js/mui.min.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init();
+			mui('#orderItem').on('tap','a',function () {
+				mui.openWindow({
+					url:this.href,
+					id:this.href
+				})
+			})
 		</script>
 	</body>
 

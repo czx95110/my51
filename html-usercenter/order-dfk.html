@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>待付款</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/user-center.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">待付款</h1>
+		</header>
+		
+		<div class="mui-content">
+		    <div id="tabItems" class="u-center-header">
+		    	<a href="order-dfk.html" class="tab-item active">待付款</a>
+		    	<a href="order-yfk.html" class="tab-item">已付款</a>
+		    	<a href="order-succ.html" class="tab-item">交易成功</a>
+		    	<a href="order-yfk.html" class="tab-item">交易失败</a>
+		    </div>
+		    <div class="u-center-body">
+		    	<!--无订单-->
+		    	<div class="no-order">
+		    	 		<img src="../img/no-find.jpg"/>
+		    			<div>暂无相关订单记录</div>
+		    			<a href="#" class="mui-btn mui-btn-green">去瞧瞧</a>
+		    	</div>
+		    	<!--有订单-->
+		    	<ul class="mui-table-view">
+		    	 <li class="mui-table-view-cell">
+		    	 	<div class="cell-head">
+		    	 		<i class="mui-icon mui-icon-star-filled"></i>
+		    	 		<span class="">充值</span>
+		    	 		<span class="cell-time">2008-08-08 08:08:08</span>
+		    	 	</div>
+		    	 	<div class="cell-body">
+		    	 		<p class="mui-ellipsis">【阿斯蒂芬】，闪电发顺丰，阿法士大夫星星</p>
+		    	 		<p class="">订单号： <b>20170707152634000125</b></p>
+		    	 	</div>
+		    	 	<div class="cell-foot">
+		    	 		<p class="">价格： <b>￥666.66元</b></p>
+		    	 	</div>
+		    	 	<img class="state-img" src="../img/state-succ.png"/>
+		    	 </li>
+					</ul>
+		    </div>
+		    
+		</div>
+		
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui('#tabItems').on('tap','a',function  () {
+				mui.openWindow({
+					url:this.href,
+					id:this.href
+				})
+			})
+		</script>
+	</body>
+
+</html>

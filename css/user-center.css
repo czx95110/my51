@@ -1,0 +1,60 @@
+.mui-bar-nav {
+  background: orange;
+  box-shadow: 0 0 0 0; }
+  .mui-bar-nav a {
+    color: #fff; }
+  .mui-bar-nav .mui-title {
+    background: orange;
+    text-align: left;
+    color: #fff; }
+
+.u-center-header {
+  position: fixed;
+  width: 100%;
+  line-height: 38px;
+  text-align: center;
+  background: orange; }
+  .u-center-header .tab-item {
+    float: left;
+    display: inline-block;
+    color: #fff;
+    width: 25%;
+    border-bottom: 2px solid transparent; }
+    .u-center-header .tab-item.active {
+      border-bottom-color: #fff; }
+
+.u-center-body {
+  position: relative;
+  top: 40px; }
+  .u-center-body .no-order {
+    text-align: center;
+    padding: 60px 0 30px; }
+    .u-center-body .no-order img {
+      width: 80px;
+      height: 40px; }
+    .u-center-body .no-order div {
+      line-height: 40px;
+      color: #999; }
+  .u-center-body .mui-icon-star-filled {
+    color: orange; }
+  .u-center-body .cell-head {
+    color: #999; }
+  .u-center-body .cell-time {
+    float: right;
+    margin-top: 2px; }
+  .u-center-body .cell-body {
+    padding: 5px 0;
+    border-bottom: 1px solid orange; }
+  .u-center-body .cell-foot {
+    padding: 8px 0 0 0; }
+  .u-center-body p {
+    line-height: 25px;
+    font-size: 16px;
+    color: #555; }
+  .u-center-body .state-img {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; }

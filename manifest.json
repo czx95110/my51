@@ -204,7 +204,8 @@
 					"js/common.js",
 					"js/webviewGroup.js",
 					"img/nav-a.png",
-					"img/nav-b.png"
+					"img/nav-b.png",
+					"html-usercenter/order-dfk.html"
 				],
 				"refer": [
 					"html/subpage-mine.html",
@@ -244,7 +245,8 @@
 					"css/icons-extra.css",
 					"fonts/mui-icons-extra.ttf",
 					"img/jiuweihu.png",
-					"img/manwang.png"
+					"img/manwang.png",
+					"html-usercenter/order-dfk.html"
 				],
 				"refer": [
 					"html/order-to-be-confirm.html"
@@ -358,6 +360,35 @@
 					"img/carousel-2.jpg",
 					"fonts/mui.ttf",
 					"img/user-photo.png"
+				],
+				"refer": [
+					"html-usercenter/order-dfk.html",
+					"html-usercenter/order-yfk.html"
+				],
+				"priority": 0
+			},
+			"html-usercenter/order-dfk.html": {
+				"resources": [
+					"html-usercenter/order-yfk.html",
+					"img/no-find.jpg",
+					"css/user-center.css",
+					"html-usercenter/order-succ.html",
+					"html/subpage-home.html",
+					"index.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html-usercenter/order-succ.html": {
+				"resources": [
+					"html-usercenter/order-dfk.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html-usercenter/order-yfk.html": {
+				"resources": [
+					"html-usercenter/order-dfk.html"
 				],
 				"refer": [],
 				"priority": 0
