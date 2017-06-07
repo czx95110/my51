@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-input-group {
+				margin-top: 10px;
+			}
+			.btn-login{
+				width: 94%;
+				margin: 10px auto 0;
+			}
+			.mui-btn-block{
+				padding: 10px 0;
+			}
+			.forget{
+				margin-top: 30px;
+				text-align: center;
+			}
+			.forget i{
+				padding: 0 1px;
+				margin: 0 8px;
+				background: blue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">登录</h1>
+		</header>
+
+		<div class="mui-content">
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label>账号：</label>
+					<input type="text" name="" class="mui-input-clear" placeholder="请输入账号">
+				</div>
+				<div class="mui-input-row">
+					<label>密码：</label>
+					<input type="password" name="" id="" class="mui-input-password" placeholder="请输入密码" />
+				</div>
+			</form>
+			<form class="mui-input-group">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						自动登录
+						<div class="mui-switch">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+				</ul>
+			</form>
+			<form class="mui-input-group btn-login">
+				<button type="button" class="mui-btn mui-btn-block mui-btn-blue"> 登录 </button>
+			</form>
+			<div class="forget">
+				<a href="c-register.html">注册账号</a><i class=""></i><a href="c-find-pwd.html" class="">忘记密码</a>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui('.forget').on('tap','a',function  () {
+				mui.openWindow({
+					url:this.href,
+					id:this.href
+				})
+			});
+		</script>
+	</body>
+
+</html>

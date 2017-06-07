@@ -360,11 +360,13 @@
 					"css/mui.min.css",
 					"img/carousel-2.jpg",
 					"fonts/mui.ttf",
-					"img/user-photo.png"
+					"img/user-photo.png",
+					"css/subpage-mine.css"
 				],
 				"refer": [
 					"html-usercenter/order-dfk.html",
-					"html-usercenter/order-yfk.html"
+					"html-usercenter/order-yfk.html",
+					"html-usercenter/second-pwd-gesture.html"
 				],
 				"priority": 0
 			},
