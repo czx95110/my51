@@ -22,7 +22,7 @@ dd {
   color: #fff; }
 
 .mui-bar.mui-bar-nav.my-head-bg {
-  background: #ff5a00; }
+  background: #5588ee; }
 
 .mui-search .my-input-bg {
   background: #fff;
@@ -46,7 +46,7 @@ dd {
   color: #222; }
   .my-title-homepage .title-left {
     padding-left: 8px;
-    border-left: 3px solid #ff5a00; }
+    border-left: 3px solid #5588ee; }
   .my-title-homepage .title-right {
     float: right;
     margin-right: 5px; }
@@ -61,8 +61,8 @@ dd {
   top: 50%;
   right: 10px;
   padding: 0 8px;
-  color: #ff5a00;
-  border: 1px solid #ff5a00;
+  color: #5588ee;
+  border: 1px solid #5588ee;
   border-radius: 3px;
   font-size: 13px;
   height: 28px;
@@ -133,11 +133,11 @@ dd {
   margin-top: 50px; }
 
 .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
-  color: #ff5a00;
-  border-bottom-color: #ff5a00; }
+  color: #5588ee;
+  border-bottom-color: #5588ee; }
 
 .mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-progress-bar {
-  background: #ff5a00; }
+  background: #5588ee; }
 
 .mui-scroll {
   top: 1px; }
@@ -158,7 +158,7 @@ dd {
   position: absolute;
   top: 11px;
   right: 15px;
-  color: #ff5a00; }
+  color: #5588ee; }
   .mui-table-view-cell .gm-gold-money b {
     display: block;
     text-align: center;

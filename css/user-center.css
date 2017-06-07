@@ -1,19 +1,24 @@
 .mui-bar-nav {
-  background: orange;
+  background: #5588ee;
   box-shadow: 0 0 0 0; }
   .mui-bar-nav a {
     color: #fff; }
   .mui-bar-nav .mui-title {
-    background: orange;
+    background: #5588ee;
     text-align: left;
     color: #fff; }
+
+.mui-btn-self {
+  background-color: #5588ee;
+  border-color: #5588ee;
+  color: #fff; }
 
 .u-center-header {
   position: fixed;
   width: 100%;
   line-height: 38px;
   text-align: center;
-  background: orange; }
+  background: #5588ee; }
   .u-center-header .tab-item {
     float: left;
     display: inline-block;
@@ -36,7 +41,7 @@
       line-height: 40px;
       color: #999; }
   .u-center-body .mui-icon-star-filled {
-    color: orange; }
+    color: #5588ee; }
   .u-center-body .cell-head {
     color: #999; }
   .u-center-body .cell-time {
@@ -44,7 +49,7 @@
     margin-top: 2px; }
   .u-center-body .cell-body {
     padding: 5px 0;
-    border-bottom: 1px solid orange; }
+    border-bottom: 1px solid #5588ee; }
   .u-center-body .cell-foot {
     padding: 8px 0 0 0; }
   .u-center-body p {

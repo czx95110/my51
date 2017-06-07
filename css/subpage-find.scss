@@ -1,5 +1,10 @@
+@charset "utf-8";
+@import "variable";
+
+
+
 .mui-bar {
-    background: orange;
+    background: $baseColor;
     box-shadow: 0 0 0 0;
     .find-title {
         line-height: 44px;
@@ -28,10 +33,10 @@
 
 .mui-slider-indicator.mui-segmented-control{
     position: fixed;
-    background: orange;
+    background: $baseColor;
     color: white;
     z-index: 99;
-    border-bottom: 2px solid orange; 
+    border-bottom: 2px solid $baseColor; 
 }
 .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
     color: #fff;

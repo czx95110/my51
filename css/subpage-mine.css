@@ -1,0 +1,63 @@
+.user-header {
+  padding: 10px 0;
+  background: #5588ee; }
+
+.user-avater {
+  line-height: 80px;
+  overflow: hidden;
+  color: #fff; }
+
+.user-avater img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 10px 0 0 20px; }
+
+.user-avater .user-name {
+  float: left;
+  margin-left: 15px; }
+
+.user-avater .user-score {
+  float: right;
+  margin: 20px 0 0 0;
+  line-height: 40px;
+  padding: 0 10px;
+  background: #fff;
+  color: #5588ee;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px; }
+
+.user-score span {
+  margin-left: 8px;
+  font-size: 15px; }
+
+.user-list {
+  width: 96%;
+  margin: 20px auto 0;
+  border-top: 1px solid #fff;
+  text-align: center; }
+
+.user-list a {
+  display: block;
+  padding: 10px 0 0;
+  margin: 0;
+  color: #fff; }
+
+.user-list p {
+  color: #fff; }
+
+.user-list .mui-icon {
+  font-size: 2em; }
+
+.floor-blue,
+.floor-green {
+  margin-top: 10px; }
+
+.floor-blue {
+  color: cornflowerblue; }
+
+.floor-green {
+  color: green; }
+
+.floor-theme {
+  color: #5588ee; }

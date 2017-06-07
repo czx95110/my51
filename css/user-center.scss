@@ -1,14 +1,22 @@
+@charset "utf-8";
+@import "variable";
+ 
 .mui-bar-nav {
-    background: orange;
+    background: $baseColor;
     box-shadow: 0 0 0 0;
     a {
         color: #fff;
     }
     .mui-title {
-        background: orange;
+        background: $baseColor;
         text-align: left;
         color: #fff;
     }
+}
+.mui-btn-self{
+    background-color: $baseColor;
+    border-color: $baseColor;
+    color: #fff;
 }
 
 .u-center-header {
@@ -16,7 +24,7 @@
     width: 100%;
     line-height: 38px;
     text-align: center;
-    background: orange;
+    background: $baseColor;
     .tab-item {
         float: left;
         display: inline-block;
@@ -45,7 +53,7 @@
         }
     }
     .mui-icon-star-filled {
-        color: orange;
+        color: $baseColor;
     }
     .cell-head {
         color: #999;
@@ -56,7 +64,7 @@
     }
     .cell-body {
         padding: 5px 0;
-        border-bottom: 1px solid orange;
+        border-bottom: 1px solid $baseColor;
     }
     .cell-foot{
         padding: 8px 0 0 0;

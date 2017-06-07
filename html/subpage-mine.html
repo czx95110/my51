@@ -6,68 +6,8 @@
 		<title>我的</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../css/mui.min.css" rel="stylesheet" />
-		<style type="text/css">
-			.user-header {
-				padding: 10px 0;
-				background: orange;
-			}
-			
-			.user-avater {
-				line-height: 80px;
-				overflow: hidden;
-				color: #fff;
-			}
-			
-			.user-avater img {
-				float: left;
-				width: 60px;
-				height: 60px;
-				margin: 10px 0 0 20px;
-			}
-			
-			.user-avater .user-name {
-				float: left;
-				margin-left: 15px;
-			}
-			
-			.user-avater .user-score {
-				float: right;
-				margin: 20px 0 0 0;
-				line-height: 40px;
-				padding: 0 10px;
-				background: #fff;
-				color: orange;
-				border-top-left-radius: 20px;
-				border-bottom-left-radius: 20px;
-			}
-			
-			.user-score span {
-				margin-left: 8px;
-				font-size: 15px;
-			}
-			
-			.user-list {
-				width: 96%;
-				margin: 20px auto 0;
-				border-top: 1px solid #fff;
-				text-align: center;
-			}
-			
-			.user-list a {
-				display: block;
-				padding: 10px 0 0;
-				margin: 0;
-				color: #fff;
-			}
-			
-			.user-list p {
-				color: #fff;
-			}
-			
-			.user-list .mui-icon {
-				font-size: 2em;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="../css/subpage-mine.css" />
+
 	</head>
 
 	<body>
@@ -110,60 +50,60 @@
 				</div>
 
 			</div>
-			<ul class="mui-table-view">
+			<ul class="mui-table-view floor-theme" id="firstFloorPage">
 				<li class="mui-table-view-cell">
-					<a href="" class="">
-						<i class="mui-icon mui-icon-flag"></i> 刘备
+					<a href="../html-usercenter/first-mygame.html" class="">
+						<i class="mui-icon mui-icon-flag"></i> 我的赵子龙
 					</a>
 				</li>
 				<li class="mui-table-view-cell">
-					<a href="" class="">
-						<i class="mui-icon mui-icon-home"></i> 关羽
+					<a href="../html-usercenter/first-addr.html" class="">
+						<i class="mui-icon mui-icon-home"></i> 孔明
 					</a>
 				</li>
 				<li class="mui-table-view-cell">
-					<a href="" class="">
-						<i class="mui-icon mui-icon-map"></i> 张飞
+					<a href="../html-usercenter/first-history.html" class="">
+						<i class="mui-icon mui-icon-map"></i> 关羽
 					</a>
 				</li>
 				<li class="mui-table-view-cell">
-					<a href="" class="">
-						<i class="mui-icon mui-icon-flag"></i> 赵云
+					<a href="../html-usercenter/first-collect.html" class="">
+						<i class="mui-icon mui-icon-flag"></i> 张飞
 					</a>
 				</li>
 
 			</ul>
 
-			<ul class="mui-table-view" style="margin-top: 10px;color: cornflowerblue;">
+			<ul class="mui-table-view floor-blue">
 				<li class="mui-table-view-cell">
-					<a href=""><i class="mui-icon mui-icon-locked"></i> 手势密码</a>
+					<a href="../html-usercenter/second-pwd-gesture.html"><i class="mui-icon mui-icon-locked"></i> 手势密码</a>
 					<div class="mui-switch mui-active mui-switch-blue">
 						<div class="mui-switch-handle"></div>
 					</div>
 				</li>
 				<li class="mui-table-view-cell">
-					<a href=""><i class="mui-icon mui-icon-locked"></i> 支付密码</a>
+					<a href="../html-usercenter/second-pwd-pay.html"><i class="mui-icon mui-icon-locked"></i> 支付密码</a>
 				</li>
 				<li class="mui-table-view-cell">
-					<a href=""><i class="mui-icon mui-icon-locked"></i> 登录密码</a>
+					<a href="../html-usercenter/second-pwd-login.html"><i class="mui-icon mui-icon-locked"></i> 登录密码</a>
 					<div class="mui-switch mui-switch-mini mui-switch-blue  mui-active">
 						<div class="mui-switch-handle"></div>
 					</div>
 				</li>
 			</ul>
 
-			<ul class="mui-table-view" style="margin-top: 10px;color: green;">
+			<ul class="mui-table-view floor-green">
 				<li class="mui-table-view-cell">
-					<a href=""><i class="mui-icon mui-icon-help"></i> 帮助中心</a>
+					<a href="../html-usercenter/third-helpcenter.html"><i class="mui-icon mui-icon-help"></i> 帮助中心</a>
 				</li>
 				<li class="mui-table-view-cell">
-					<a href=""><i class="mui-icon mui-icon-chatboxes"></i> 意见反馈</a>
+					<a href="../html-usercenter/third-feedback.html"><i class="mui-icon mui-icon-chatboxes"></i> 意见反馈</a>
 				</li>
 				<li class="mui-table-view-cell">
-					<a href=""><i class="mui-icon mui-icon-gear"></i> 设置</a>
+					<a href="../html-usercenter/third-setting.html"><i class="mui-icon mui-icon-gear"></i> 设置</a>
 				</li>
 				<li class="mui-table-view-cell">
-					<a href=""><i class="mui-icon mui-icon-checkbox"></i> 司马懿</a>
+					<a href="../html-usercenter/third-other.html"><i class="mui-icon mui-icon-checkbox"></i> 司马懿</a>
 				</li>
 
 			</ul>
@@ -172,17 +112,27 @@
 		<script src="../js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init();
-			mui('#orderItem').on('tap','a',function () {
+			mui('#orderItem').on('tap', 'a', function() {
+				mui.openWindow({
+					url: this.href,
+					id: this.href,
+					extras: {
+						age: 36
+					}
+				});
+				//发送参数至order-dfk.html页面
+				var dpage = plus.webview.getWebviewById(this.href);
+				mui.fire(dpage, 'npg', {
+					age: 44
+				});
+			});
+			
+			mui('.mui-table-view').on('tap','a',function  (e) {
 				mui.openWindow({
 					url:this.href,
 					id:this.href,
-					extras:{
-						age:36
-					}
-				});
-		 		//发送参数至order-dfk.html页面
-		 		var dpage=plus.webview.getWebviewById(this.href);
-		 		mui.fire(dpage,'npg',{age:44});
+					extras:{}
+				})
 			})
 		</script>
 	</body>
