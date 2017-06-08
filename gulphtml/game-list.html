@@ -9,11 +9,10 @@
 		<link rel="stylesheet" type="text/css" href="../css/app.css" />
 	</head>
 	<style type="text/css">
-		.mui-bar-nav {
-			background: #FE6700;
-			box-shadow: 0 0 0;
-		}
-		
+ 
+ 		.mui-bar-nav{
+ 			height: 80px;
+ 		}
 		.mui-bar-nav a {
 			color: #fff;
 		}
@@ -22,14 +21,18 @@
 			text-align: left;
 			color: #fff;
 		}
-		
+		.mui-bar-nav+.mui-content{
+			padding-top: 65px;
+		}
 		.game-head {
+			margin-top: 44px;
 			line-height: 36px;
-			background: #FE6700;
 			color: #fff;
 			text-align: center;
 		}
-		
+		.game-head a{
+			color: #fff;
+		}
 		.my-icon-arrow-down {
 			padding: 0 14px;
 			background: url(../img/arrow-down2.png)no-repeat center;
@@ -46,21 +49,21 @@
 		<header class="mui-bar mui-bar-nav">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 			<h1 class="mui-title">穿越火线</h1>
-
-		</header>
-
-		<div class="mui-content">
 			<div class="game-head mui-row">
-				<div class="mui-col-xs-4">
+				<a href="game-list-select.html" class="mui-col-xs-4">
 					区服 <i class="my-icon-arrow-down"></i>
-				</div>
+				</a>
 				<div class="mui-col-xs-4">
 					排序 <i class="my-icon-arrow-down"></i>
 				</div>
-				<div class="mui-col-xs-4">
+				<a href="game-list-filter.html" class="mui-col-xs-4">
 					筛选 <i class="my-icon-arrow-down"></i>
-				</div>
-			</div>
+				</a>
+			</div>			
+		</header>
+
+		<div class="mui-content">
+
 
 			<ul class="mui-table-view">
 				<li class="mui-table-view-cell">
@@ -69,16 +72,26 @@
 					<div class="gm-com-info">江西区/江西1区 </div>
 					<span class="gm-gold-money">￥1200.00元 </span>
 				</li>
-				@@include('./comhtml/game-list.html') @@include('./comhtml/game-list.html') 
-				@@include('./comhtml/game-list.html') @@include('./comhtml/game-list.html') 
-				@@include('./comhtml/game-list.html') @@include('./comhtml/game-list.html') 
-				@@include('./comhtml/game-list.html') @@include('./comhtml/game-list.html') 
+				@@include('./html-com/game-list.html') @@include('./html-com/game-list.html') 
+				@@include('./html-com/game-list.html') @@include('./html-com/game-list.html') 
+				@@include('./html-com/game-list.html') @@include('./html-com/game-list.html') 
+				@@include('./html-com/game-list.html') @@include('./html-com/game-list.html') 
 			</ul>
 		</div>
 
 		<script src="../js/mui.min.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init();
+			mui('.game-head').on('tap','a',function  () {
+				mui.openWindow({
+					url:this.href,
+					id:this.href,
+					styles:{
+						top:'80px',
+						bottom:0
+					}
+				})
+			})
 		</script>
 	</body>
 

@@ -47,4 +47,6 @@ gulp.task('file3', function () {
  //监测文件改变，自动执行file3任务。 执行file2任务。
 gulp.watch('gulphtml/subpage-find.html',['file3']);
 gulp.watch('gulphtml/game-list.html',['file2']);
+gulp.watch('gulphtml/subpage-home.html',['file']);
 
+ 

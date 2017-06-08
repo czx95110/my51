@@ -1,17 +1,32 @@
 @charset "UTF-8";
-/* 修改默认样式 */
 body {
   background: #F2F2F2;
   font-size: 15px; }
 
-ul,
-ol,
-dl,
-dd {
+ul, ol, dl, dd {
   margin: 0;
   padding: 0;
   list-style: none; }
 
+.container {
+  position: relative;
+  margin: 0 auto; }
+  .container:before {
+    content: '';
+    display: block;
+    clear: both; }
+  .container:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.hide-d {
+  display: none; }
+
+.hide-v {
+  visibility: hidden; }
+
+/* 修改默认样式 */
 .container-sub {
   position: relative;
   margin: 5px auto;

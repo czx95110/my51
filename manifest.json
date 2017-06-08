@@ -246,7 +246,8 @@
 					"fonts/mui-icons-extra.ttf",
 					"img/jiuweihu.png",
 					"img/manwang.png",
-					"html-usercenter/order-dfk.html"
+					"html-usercenter/order-dfk.html",
+					"html/game-list.html"
 				],
 				"refer": [
 					"html/order-to-be-confirm.html"
@@ -366,7 +367,8 @@
 				"refer": [
 					"html-usercenter/order-dfk.html",
 					"html-usercenter/order-yfk.html",
-					"html-usercenter/second-pwd-gesture.html"
+					"html-usercenter/second-pwd-gesture.html",
+					"html-usercenter/first-mygame.html"
 				],
 				"priority": 0
 			},
@@ -398,6 +400,16 @@
 					"html-usercenter/order-dfk.html"
 				],
 				"refer": [],
+				"priority": 0
+			},
+			"html/game-list.html": {
+				"resources": [
+					"img/arrow-down2.png"
+				],
+				"refer": [
+					"html/game-list-filter.html",
+					"html/game-list-select.html"
+				],
 				"priority": 0
 			}
 		},

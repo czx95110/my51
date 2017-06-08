@@ -14,3 +14,19 @@ mui('#tabContainers').on('tap', '.mui-table-view-cell', function(e) {
 		extras:{}
 	})
 });
+
+var glist='game-list.html';
+
+mui('#gameList1').on('tap','a',function  () {
+	mui.openWindow({
+		url:'game-list.html',
+		id:this.href
+	});
+})
+
+mui('#gameHotList1').on('tap','dl',function  () {
+	mui.openWindow({
+		url:'game-list.html',
+		id:this.href
+	});
+})
